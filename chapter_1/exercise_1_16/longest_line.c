@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/* Exercise 1.16:  Write a program that takes set of text lines and prints out the longest one out of them
- * here  a line must atleast contain one single character to be considered as valid or else will be considered as end-of-file,
- * even a line containing only a newline has length of 1. */
-
 #define MAX_LEN 200   //max input line size
 
 /*now we declare two important function prototypes*/
@@ -41,6 +37,14 @@ int getLine(char line[]) {
         line[i++] = c;
     }
     line[i] = '\0';
+
+    while (c != EOF && c != '\n') {
+        i++;
+        c = getchar()
+    }
+    if(c == '\n') {
+        i++;
+    }
 
     return i;
 }
