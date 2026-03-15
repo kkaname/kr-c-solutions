@@ -17,3 +17,15 @@ gcc -o longest_line longest_line.c
 ```sh
 ./longest_line
 ```
+
+## Expected Output:
+### Input:
+```
+Hello world
+C is a programming language
+hello world from c
+```
+### Output:
+```
+The longest string with a length of 29 is "c is a programming language"
+```
