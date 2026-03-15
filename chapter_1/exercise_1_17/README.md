@@ -17,3 +17,15 @@ gcc -o longerline_80 longerline_80.c
 ```sh
 ./longerline_80
 ```
+
+## Expected Output:
+### Input:
+```
+short line
+this line is definitely longer that eight characters and should therefore appear in the output of the program
+```
+
+### Output:
+```
+this line is definitely longer that eight characters and should therefore appear in the output of the program
+```
