@@ -50,6 +50,7 @@ int getLine(char line[]) {
 }
 
 void copy(char longest_line[], char current_line[]) {
-    for(int i = 0; (longest_line[i] = current_line[i]) != '\0'; i++)
+    int i;
+    for(i = 0; (longest_line[i] = current_line[i]) != '\0'; i++)
         ; // null statement as the work is done by the condition and incrementatoin inside the loop itself
 }
