@@ -2,7 +2,7 @@
 // EOF is defined in stdio.h
 
 int main(void) {
-    printf("The value of EOF is %d\n", EOF); /* Prints the value of EOF as -1. */
+    printf("The value of EOF is %d\n", EOF);
 
     return 0;
 }
