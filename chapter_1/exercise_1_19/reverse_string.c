@@ -1,8 +1,5 @@
 #include <stdio.h>
 
-/* Exercise 1.19: Write a function reverse(s) that reverse the character string s.
- * Use it to write a program that reverses its input a line at a time. */
-
 #define MAXLEN 200
 
 int getLine(char line[]);
@@ -11,8 +8,8 @@ void reverse(char s[], int len);
 int main(void) {
     int len;
     char line[MAXLEN];
-    
-    while((len = getLine(line)) > 0) {
+
+    while ((len = getLine(line)) > 0) {
         reverse(line, len);
         printf("%s\n", line);
     }
@@ -23,10 +20,10 @@ int main(void) {
 int getLine(char line[]) {
     int i, c;
 
-    for(i = 0; i < MAXLEN - 1 && (c = getchar()) != EOF && c != '\n'; i++) {
+    for (i = 0; i < MAXLEN - 1 && (c = getchar()) != EOF && c != '\n'; i++) {
         line[i] = c;
     }
-    
+
     if (c == '\n') {
         line[i++] = c;
     }
