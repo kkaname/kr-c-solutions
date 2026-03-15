@@ -17,3 +17,15 @@ gcc -o trailing_blanks trailing_blanks.c
 ```sh
 ./trailing_blanks
 ```
+
+## Expected Output:
+### Input:
+```
+hello world      
+```
+
+### Output:
+```
+hello world
+```
+Removes trailing blanks and tabs from the input line.
