@@ -17,3 +17,8 @@ gcc -o hello_world hello_world.c
 ```sh
 ./hello_world
 ```
+
+## Output:
+```
+hello, world
+```
