@@ -2,42 +2,29 @@
 
 Solution to Exercise 1-11 from *The C Programming Language* (K&R).
 
-**Question:** How would you test the word count program? What kinds of input are most likely to uncover bugs if there are any? 
+**Question:** How would you test the word count program? What kinds of input are most likely to uncover bugs if there are any?
 
+The program reads characters from standard input and counts words using an IN/OUT state machine. A word is defined as a sequence of non-whitespace characters. When EOF is reached (`Ctrl+D`), the total word count is printed.
 
-A word is defined as a sequence of non-whitespace characters.
-Whitespace characters considered:
+## Build & Run
 
-Space (' ')
-
-Tab ('\t')
-
-Newline ('\n')
-
-## How It Works
-
-The program reads characters one at a time from standard input using getchar().
-
-It maintains a state variable:
-IN — currently inside a word
-OUT — currently outside a word
-
-When a non-whitespace character is encountered while in the OUT state, the word counter is incremented and the state changes to IN.
-When a whitespace character (' ', '\t', '\n') is encountered, the state changes to OUT.
-When EOF is reached, the total word count is printed.
-
-## Build and Run:
-'''
+### Compile:
+```sh
 gcc -o word_count word_count.c
-./word_count
-'''
-Type or pipe text into the program. Press Ctrl+D (EOF) to see the result.
+```
 
-## Example
-'''
-echo -e "hello   world\nhow are\tyou" | ./word_count
-'''
-## Expected output:
-'''
-Number of words: 5
-'''
+### Run:
+```sh
+./word_count
+```
+
+## Expected Output:
+### Input:
+```
+hello    world
+this is  a    test
+```
+### Output:
+```
+Number of words: 6
+```
