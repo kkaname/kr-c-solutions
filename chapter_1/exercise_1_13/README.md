@@ -2,62 +2,42 @@
 
 Solution to Exercise 1-13 from *The C Programming Language* (K&R).
 
-**Question:** Write a program to print a histogram of the lengths of words in its input. It is easy to draw the histogram with the bars horizontal; a vertical orientation is more challenging. 
+**Question:** Write a program to print a histogram of the lengths of words in its input. It is easy to draw the histogram with the bars horizontal; a vertical orientation is more challenging.
 
-This program reads input from standard input and prints a histogram
-of word lengths.
+The program reads input from standard input and prints both a horizontal and vertical histogram of word lengths. Word length frequencies are stored in an array and displayed as `#` bars. Press `Ctrl+D` (EOF) to see the result.
 
-Two histograms are displayed:
-1. Horizontal histogram
-2. Vertical histogram
+## Build & Run
 
-A word is defined as a sequence of characters separated by:
-- Space (' ')
-- Tab ('\t')
-- Newline ('\n')
-
-## How It Works
-
-- Each word length is counted.
-- The frequency of each word length is stored in an integer array.
-- The maximum word length and maximum frequency are tracked
-  to properly format the vertical histogram.
-
-## Build and Run:
-
+### Compile:
 ```sh
 gcc -o word_length_histogram word_length_histogram.c
+```
+
+### Run:
+```sh
 ./word_length_histogram
 ```
-Type or pipe text into the program. Press Ctrl+D (EOF) to see the result.
 
-## Example
+## Expected Output:
+### Input:
 ```
-hello world from C programming
+hello    world
+this is  a    test
 ```
-
-## Expected output:
+### Output:
 ```
-Horizontal Histogram:
+Horizontal Histogram
 ---------------------
-1: #
-2:
-3: 
-4: #
-5: ##
-6: 
-7:
-8:
-9:
-10: 
-11: #
+  1:    #
+  2:    #
+  3:
+  4:    ##
+  5:    ##
 
-Vertical Histogram:
+Vertical Histogram
 -------------------
-
-
-                  #
-  #           #   #                       #
--------------------------------------------
-  1   2   3   4   5   6   7   8   9   10 11
+           #  #
+  #  #     #  #
+  1  2  3  4  5
+---------------
 ```
