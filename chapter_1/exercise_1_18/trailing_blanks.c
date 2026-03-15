@@ -11,7 +11,9 @@ int main(void) {
 
     while ((len = getLine(line)) > 0) {
         remove_trailing_blanks(line, len);
-        printf("%s\n", line);
+        if (len[0] != '\0') {
+            printf("%s\n", line);
+        }
     }
 
     return 0;
@@ -43,7 +45,7 @@ int getLine(char line[]) {
 
 void remove_trailing_blanks(char line[], int len) {
     int i;
-    for (i = len - 1; i >= 0 && (line[i] == ' ' || line[i] == '\t' || line[i] == '\n'); i--);
+    for (i = len - 1; i >= 0 && (line[i] == ' ' || line[i] == '\t'); i--);
     ;
     if (i < 0) {
         line[0] = '\0';
