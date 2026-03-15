@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-/* Exercise 1.14: Write a program to print a histogram of the frequencies of different characters in its input. */
-
 #define SMALL_LETTER 26 //26 alphabets from a to z
 #define CAP_LETTER 26 //26 alphabets from a to z
 #define NUM 10 //10 decimal digit
@@ -33,7 +31,7 @@ int main(void) {
     // Now we print the histogram
     printf("Word Frequency Histogram:\n");
     printf("-------------------------\n");
-    for(i = 0; i < (SMALL_LETTER + CAP_LETTER + NUM + OTHERS); i++) {
+    for (i = 0; i < (SMALL_LETTER + CAP_LETTER + NUM + OTHERS); i++) {
         if (freq[i] > 0) {
             if (i < SMALL_LETTER) {
                 printf("%c: ", 'a' + i);
@@ -48,12 +46,11 @@ int main(void) {
                 printf("others:");
             }
 
-            for(int j = 0; j < freq[i]; j++) {
+            for (int j = 0; j < freq[i]; j++) {
                 printf("#");
             }
             putchar('\n');
         }
-
     }
 
     return 0;

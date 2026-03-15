@@ -9,7 +9,7 @@
 #define LIM 100
 
 int main(void) {
-    int c, i =0;
+    int c, i = 0;
     char s[LIM];
 
     while (1) {
