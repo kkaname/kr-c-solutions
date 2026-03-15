@@ -17,3 +17,13 @@ gcc -o reverse_string reverse_string.c
 ```sh
 ./reverse_string
 ```
+
+## Expected Output:
+### Input:
+```
+hello world from c
+```
+### Output:
+```
+c morf drlow olleh
+```
