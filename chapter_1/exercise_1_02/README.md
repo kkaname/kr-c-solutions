@@ -27,3 +27,11 @@ gcc -o printf_argument printf_argument.c
 ```sh
 ./printf_argument
 ```
+
+## Output:
+```
+main.c: In function ‘main’:
+main.c:4:28: warning: unknown escape sequence: ‘\c’
+    4 |     printf("hello, world\c");
+      |                         ^
+```
