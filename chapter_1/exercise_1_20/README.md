@@ -17,3 +17,15 @@ gcc -o detab detab.c
 ```sh
 ./detab
 ```
+
+## Expected Output:
+### Input:
+```
+hello    world
+//   ^
+//   `- actual tab character
+```
+### Output:
+```
+hello    world
+```
