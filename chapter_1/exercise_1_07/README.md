@@ -2,23 +2,27 @@
 
 Solution to Exercise 1-7 from *The C Programming Language* (K&R).
 
-**Question:** Write a program to print the value of EOF. 
+**Question:** Write a program to print the value of EOF.
 
-The exercise asks to write a program that prints the value of `EOF`.
-
-## How It Works
-
-`EOF` is a macro defined in `<stdio.h>` that represents the end-of-file indicator. The program simply prints its integer value using `printf` with `%d`. On most systems, this value is `-1`.
-
-### Sample Output
-
-```
-The value of EOF is -1
-```
+`EOF` is a macro defined in `<stdio.h>` representing the end-of-file indicator. The program prints its integer value using `printf`. On most systems, this value is `-1`.
 
 ## Build & Run
 
+### Compile:
+```sh
+gcc -o value_EOF value_EOF.c
+```
+
+### Run:
+```sh
+./value_EOF
+```
 ```sh
 gcc -o value_EOF value_EOF.c
 ./value_EOF
+```
+
+## Output:
+```
+The value of EOF is -1
 ```
