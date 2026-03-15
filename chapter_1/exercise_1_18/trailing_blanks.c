@@ -1,8 +1,5 @@
 #include <stdio.h>
 
-/* Exercise 1.18: Write a progam to remove trailing blanks and tabs from each line of intput,
- * and to delete entirely blank lines. */
-
 #define MAXLEN 1000
 
 int getLine(char line[]);
@@ -12,7 +9,7 @@ int main(void) {
     int len;
     char line[MAXLEN];
 
-    while((len = getLine(line)) > 0) {
+    while ((len = getLine(line)) > 0) {
         remove_trailing_blanks(line, len);
         printf("%s\n", line);
     }
@@ -23,7 +20,7 @@ int main(void) {
 int getLine(char line[]) {
     int c, i;
 
-    for(i = 0; i < MAXLEN - 1 && (c = getchar()) != EOF && c != '\n'; i++) {
+    for (i = 0; i < MAXLEN - 1 && (c = getchar()) != EOF && c != '\n'; i++) {
         line[i] = c;
     }
 
@@ -37,7 +34,7 @@ int getLine(char line[]) {
 }
 
 /* void remove_trailing_blanks(char line[], int len) {
-    for(int i = 2; (line[i - 1] != '\0' || line[i - 1] != '\t') && (line[i] == '\0' || line[i] == '\t'); i++) {
+    for (int i = 2; (line[i - 1] != '\0' || line[i - 1] != '\t') && (line[i] == '\0' || line[i] == '\t'); i++) {
         line[i] = '\n';
         line[i + 1] = '\0';
     }
