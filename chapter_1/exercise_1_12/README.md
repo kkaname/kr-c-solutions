@@ -1,46 +1,35 @@
-# Exercise 1-12: Word splitter
+# Exercise 1-12: Word Splitter
 
 Solution to Exercise 1-12 from *The C Programming Language* (K&R).
 
-**Question:** Write a program that prints its input one word per line. 
+**Question:** Write a program that prints its input one word per line.
 
-This program reads input from standard input and prints each word on a separate line.
+The program reads input from standard input and prints each word on a separate line. It uses an IN/OUT state machine to detect transitions between words and whitespace (spaces, tabs, newlines). Press `Ctrl+D` (EOF) to finish input.
 
-A word is defined as a sequence of characters separated by:
-- Space (' ')
-- Tab ('\t')
-- Newline ('\n')
+## Build & Run
 
-The program uses a simple state machine approach to detect transitions
-between words and whitespace.
-
-## How It Works
-
-Two states are used:
-
-- IN  (1)  : Currently inside a word
-- OUT (0)  : Currently outside a word
-
-When whitespace is encountered after being in a word,
-a newline is printed to separate words.
-
-## Build and Run:
-
+### Compile:
 ```sh
-gcc -o word_splitter word_splitter.c
-./word_splitter
-```
-Type or pipe text into the program. Press Ctrl+D (EOF) to see the result.
-
-## Example
-```
-hello world from C
+gcc -o copy_ip_nl copy_ip_nl.c
 ```
 
-## Expected output:
+### Run:
+```sh
+./copy_ip_nl
+```
+
+## Expected Output:
+### Input:
+```
+hello    world
+this is  a    test
+```
+### Output:
 ```
 hello
-world 
-from 
-C
+world
+this
+is
+a
+test
 ```
