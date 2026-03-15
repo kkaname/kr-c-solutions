@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/* Exercise 1.15: Write a program, that to rewrite the temerature conversion program
- * which is written earlier inside main() function, but now using a dedicated function
- * printing the tempurature conversion. */
-
 void fahr_to_celcius(float fahr) {
     float celcius;
     celcius = (5.0/9.0) * (fahr - 32);
@@ -22,7 +18,7 @@ int main(void) {
 
     printf("Fahrenheit\tCelcius\n-------------------------\n");
     fahr = lower;
-    while(fahr <= upper) {
+    while (fahr <= upper) {
         fahr_to_celcius(fahr);
         fahr += step;
     }
