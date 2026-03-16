@@ -17,3 +17,13 @@ gcc -o entab entab.c
 ```sh
 ./entab
 ```
+
+## Expected Output: 
+### Input: 
+```
+hello          world    from  c
+```
+### Output:
+```
+hello          world    from  c
+```
