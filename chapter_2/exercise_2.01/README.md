@@ -48,8 +48,12 @@ This program systematically prints the minimum and maximum values of all fundame
 
 
 ## Build and Run:
+### Compile: 
 ```sh
 gcc -o type_ranges type_ranges.c
+```
+### Run: 
+```sh
 ./type_ranges
 ```
 
