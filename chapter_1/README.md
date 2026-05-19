@@ -1,6 +1,6 @@
 <div align="center">
 
-# K&R C Solutions - Chapter 1: A Tutorial Introduction
+ K&R C Solutions - Chapter 1: A Tutorial Introduction
 
 </div>
 
