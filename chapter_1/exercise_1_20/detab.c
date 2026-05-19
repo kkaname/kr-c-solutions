@@ -4,16 +4,16 @@
 
 int main(void) {
     int c, current_col, tab_stop;
-    unsigned int no_spaces;
+    unsigned int num_spaces;
 
     tab_stop = 1;
     current_col = 0;
     while ((c = getchar()) != EOF) {
         if (c == '\t') {
-            no_spaces = TAB_WIDTH - (current_col % TAB_WIDTH);
-            while (no_spaces){
+            num_spaces = TAB_WIDTH - (current_col % TAB_WIDTH);
+            while (num_spaces){
                 putchar(' ');
-                --no_spaces;
+                --num_spaces;
                 ++current_col;
             }
 
