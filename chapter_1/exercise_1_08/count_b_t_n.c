@@ -19,6 +19,11 @@ int main(void) {
         }
     }
 
+    /*
+     * The reason I have prefered switch statement is that
+     * it is faster then if - else if ladder and better readability.
+     */
+
     /* -> Alternative method:
      *
      * while ((c = getchar()) != EOF) {
