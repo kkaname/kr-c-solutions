@@ -2,6 +2,9 @@
 
 #define BUFFER 200
 
+void print_horizontal_histogram(int histogram[], int histogram_length);
+void print_vertical_histogram(int histogram[], int histogram_length, int max_word_count);
+
 int main(void) {
     int i, c, histogram[BUFFER];
     int word_length, histogram_length, max_word_count;
@@ -45,10 +48,16 @@ int main(void) {
             max_word_count = histogram[word_length - 1];
         }
     }
-
     putchar('\n');
 
-    /*Now we print the HORIZONTAL HISTOGRAM.*/
+    // now we call function to print horizontal and vertical histograms
+    print_horizontal_histogram(histogram, histogram_length);
+    print_vertical_histogram(histogram, histogram_length, max_word_count);
+
+    return 0;
+}
+
+void print_horizontal_histogram(int histogram[], int histogram_length) {
     int line_index, column_index;
 
     printf("Horizontal Histogram\n---------------------\n");
@@ -63,8 +72,11 @@ int main(void) {
         ++column_index;
     }
     putchar('\n');
+}
 
-    /*Now we print the VERTICAL HISTOGRAM.*/
+void print_vertical_histogram(int histogram[], int histogram_length, int max_word_count) {
+    int line_index, column_index;
+
     printf("Vertical Histogram\n-------------------\n");
     for (line_index = max_word_count; line_index > 0; line_index--) {
         column_index = 0;
@@ -100,6 +112,4 @@ int main(void) {
             putchar('\n');
         }
     }
-
-    return 0;
 }
