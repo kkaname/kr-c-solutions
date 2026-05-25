@@ -14,6 +14,10 @@ int main(void) {
                 putchar('\\');
                 break;
             case '\b':
+                /*
+                 * Modern terminals handle backspace locally before providing it to the program
+                 * As a result, the program rarely receives a literal \b character from standard input.
+                 */
                 putchar('\\');
                 putchar('b');
                 break;
