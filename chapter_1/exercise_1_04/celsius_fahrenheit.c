@@ -11,13 +11,21 @@ int main(void) {
     printf("Celsius\t\tFahrenheit\n");
     printf("--------------------------\n");
 
-    celsius = lower;
-    while (celsius <= upper) {
+    for (celsius = lower; celsius <= upper; celsius += step) {
         fahr = (9.0 / 5.0) * celsius + 32.0;
         printf("%3.0f\t\t%6.2f\n", celsius, fahr);
-        celsius += step;
     }
+
+    /*
+     * Alternate way by using while loop
+     *
+     * celsius = lower;
+     * while (celsius <= upper) {
+     *   fahr = (9.0 / 5.0) * celsius + 32.0;
+     *   printf("%3.0f\t\t%6.2f\n", celsius, fahr);
+     *   celsius += step;
+     *}
+     */
 
     return 0;
 }
-
