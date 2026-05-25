@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAXLEN 200
+#define MAXLEN 1000
 #define LENGTH_LIMIT 80
 
 int getLine(char line[]);
