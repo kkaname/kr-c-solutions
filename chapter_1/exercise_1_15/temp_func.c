@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void fahr_to_celcius(float fahr) {
-    float celcius;
-    celcius = (5.0/9.0) * (fahr - 32);
-    printf("%3.0f\t\t%.2f\n", fahr, celcius);
+void fahr_to_celsius(float fahr) {
+    float celsius;
+    celsius = (5.0/9.0) * (fahr - 32);
+    printf("%3.0f\t\t%.2f\n", fahr, celsius);
     return;
 }
 
@@ -16,10 +16,10 @@ int main(void) {
     upper = 300;
     step = 20;
 
-    printf("Fahrenheit\tCelcius\n-------------------------\n");
+    printf("Fahrenheit\tCelsius\n-------------------------\n");
     fahr = lower;
     while (fahr <= upper) {
-        fahr_to_celcius(fahr);
+        fahr_to_celsius(fahr);
         fahr += step;
     }
 
