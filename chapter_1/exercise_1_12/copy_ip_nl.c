@@ -23,6 +23,9 @@ int main(void) {
     if (state == IN) {
         putchar('\n');
     } // if there is a word that doesn't end with ' ', '\t'
+    /*
+     * Note: In the last word, punctuation is treated as a part of the word.
+     */
 
     return 0;
 }
