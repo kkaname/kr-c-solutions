@@ -11,6 +11,7 @@ int main(void) {
 
         last_c = c;    // save current character to detect consecutive spaces
     }
+    /* Note: Only multiple spaces are collapsed into one, not tabs */
 
     return 0;
 }
