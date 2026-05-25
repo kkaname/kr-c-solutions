@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX_LEN 200   //max input line size
+#define MAX_LEN 1000   //max input line size
 
 /*now we declare two important function prototypes*/
 int getLine(char line[]);
