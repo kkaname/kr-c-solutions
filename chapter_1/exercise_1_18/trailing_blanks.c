@@ -11,7 +11,7 @@ int main(void) {
 
     while ((len = getLine(line)) > 0) {
         remove_trailing_blanks(line, len);
-        if (len[0] != '\0') {
+        if (line[0] != '\0') {
             printf("%s\n", line);
         }
     }
