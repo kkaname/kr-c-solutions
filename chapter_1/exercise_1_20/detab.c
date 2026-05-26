@@ -22,7 +22,7 @@ int main(void) {
             putchar(c);
             ++current_col;
             if (c == '\n'){
-                ++current_col;
+                current_col = 0;
             }
         }
     }
