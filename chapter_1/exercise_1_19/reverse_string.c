@@ -35,6 +35,7 @@ int getLine(char line[]) {
 void reverse(char s[], int len) {
     int i_front, i_last, temp;
     i_last = len - 2;
+    // -2 because we want to exclude newline character and null terminator
 
     for (i_front = 0; i_front < i_last/2; i_front++) {
         temp = s[i_last - i_front];
