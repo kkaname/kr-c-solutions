@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include <ctype.h>
 
 /*
@@ -7,7 +6,7 @@
  * a string to its numeric equivalent
  */
 
-#define MAXLEN 100  
+#define MAXLEN 100
 
 int atoi(char s[]);
 
@@ -33,9 +32,9 @@ int atoi(char s[]) {
     if (s[i] == '-' || s[i] == '+') {
         i++;
     }
-    
+
     for (n = 0; isdigit(s[i]); i++) {
         n = (n * 10) + (s[i] - '0');
     }
-    return sign * n;    
+    return sign * n;
 }
