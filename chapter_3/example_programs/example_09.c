@@ -30,3 +30,20 @@ int main(void) {
 
     return 0;
 }
+
+/*
+ * so without goto, some tests or an extra variable is to be done.
+ *
+ * found = 0;
+ * for (i = 0; i < n; && !found; i++) {
+ *    for (j = 0; j < m && !found; j++) {
+ *        if (a[i] == b[j]) {
+ *            found = 1;
+ *        }
+ *    }
+ * }
+ * if (found)
+ *     /do something/
+ * else
+ *     /didn't find any comman element/
+ */
