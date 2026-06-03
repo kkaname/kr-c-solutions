@@ -38,6 +38,19 @@ void itob(int n, char s[], int b) {
       printf("\n");
       break;
 
+    case 10:
+      for (i = 0; n != 0; i++) {
+        s[i] = (n % 10) + '0';
+        n = n / 10;
+      }
+      s[i] = '\0';
+      printf("Integer Equivalent -> ");
+      for (--i; i >= 0; i--) {
+        printf("%c", s[i]);
+      }
+      printf("\n");
+      break;
+
     case 8:
       // octal
       for (i = 0; n != 0; i++) {
