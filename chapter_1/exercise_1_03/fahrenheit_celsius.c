@@ -1,31 +1,31 @@
 #include <stdio.h>
 
 int main(void) {
-    float fahr, celsius;
-    int lower, upper, step;
+  float fahr, celsius;
+  int lower, upper, step;
 
-    lower = 0;
-    upper = 300;
-    step = 20;
+  lower = 0;
+  upper = 300;
+  step = 20;
 
-    printf("Fahrenheit\tCelsius\n");
-    printf("-----------------------\n");
+  printf("Fahrenheit\tCelsius\n");
+  printf("-----------------------\n");
 
-    fahr = lower;
-    while (fahr <= upper) {
-        celsius = (5.0/9.0) * (fahr - 32);
-        printf("%3.0f\t\t%6.2f\n", fahr, celsius);
-        fahr += step;
-    }
+  fahr = lower;
+  while (fahr <= upper) {
+    celsius = (5.0/9.0) * (fahr - 32);
+    printf("%3.0f\t\t%6.2f\n", fahr, celsius);
+    fahr += step;
+  }
 
-    /*
-     * Alternate way is to use a for loop instead of while loop:
-     * >for (fahr = lower; fahr <= upper; fahr += step){
-     * >   celsius = (5.0/9.0) * (fahr - 32);
-     * >   printf("%3.0f\t\t%6.2f\n", fahr, celsius);
-     * >}
-     */
+  /*
+  * Alternate way is to use a for loop instead of while loop:
+  * >for (fahr = lower; fahr <= upper; fahr += step){
+  * >   celsius = (5.0/9.0) * (fahr - 32);
+  * >   printf("%3.0f\t\t%6.2f\n", fahr, celsius);
+  * >}
+  */
 
-    return 0;
+  return 0;
 }
 
