@@ -4,9 +4,9 @@ int main(void) {
   float fahr, celsius;
   int lower, upper, step;
 
-  lower = 0;
-  upper = 300;
-  step = 20;
+  lower = 0;    // lower limit of the temperature scale
+  upper = 300;  // upper limit of the temperature scale
+  step = 20;    // step size
 
   printf("Celsius\t\tFahrenheit\n");
   printf("--------------------------\n");
