@@ -1,22 +1,6 @@
 # Exercise 1-3: Fahrenheit–Celsius Table with Heading
 
-Solution to Exercise 1-3 from *The C Programming Language* (K&R).
-
 **Question:** Modify the temperature conversion program to print a heading above the table.
-
-The program prints a two-column, Fahrenheit-to-Celsius table (0–300, with step 20) with a header row and separator line above the table for readability.
-
-## Build & Run
-
-### Compile:
-```sh
-gcc -o fahrenheit_celsius fahrenheit_celsius.c
-```
-
-### Run:
-```sh
-./fahrenheit_celsius
-```
 
 ## Output:
 ```

@@ -8,16 +8,6 @@ warning: unknown escape sequence '\c'
 ```
 The behavior of unrecognized escape sequences is undefined by the C standard — most compilers will either warn and ignore the backslash, or treat it as the literal character.
 
-## Build & Run
-### Compile:
-```sh
-gcc -o printf_argument printf_argument.c
-```
-### Run:
-```sh
-./printf_argument
-```
-
 ## Output:
 ```
 main.c: In function ‘main’:

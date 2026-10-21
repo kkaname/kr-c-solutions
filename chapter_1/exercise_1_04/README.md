@@ -2,15 +2,6 @@
 
 **Question:** Write a program to print the corresponding Celsius to Fahrenheit table.
 
-## Build & Run
-### Compile:
-```sh
-gcc -o celsius_fahrenheit celsius_fahrenheit.c
-```
-### Run:
-```sh
-./celsius_fahrenheit
-```
 ## Output:
 ```
 Celsius         Fahrenheit

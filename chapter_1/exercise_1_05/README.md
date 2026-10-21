@@ -1,18 +1,12 @@
 # Exercise 1-5: Reverse-Order Temperature Table
 
-Solution to Exercise 1-5 from *The C Programming Language* (K&R).
-
 **Question:** Modify the temperature conversion program to print the table in reverse order, that is, from 300 degrees to 0.
 
-The program prints a Celsius-to-Fahrenheit table in descending order (300 → 0, step 20). The reversal is achieved by initializing the loop variable to the upper bound and decrementing each iteration.
-
 ## Build & Run
-
 ### Compile:
 ```sh
 gcc -o reverse_order_temp reverse_order_temp.c
 ```
-
 ### Run:
 ```sh
 ./reverse_order_temp
