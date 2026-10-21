@@ -2,16 +2,6 @@
 
 **Question:** Modify the temperature conversion program to print the table in reverse order, that is, from 300 degrees to 0.
 
-## Build & Run
-### Compile:
-```sh
-gcc -o reverse_order_temp reverse_order_temp.c
-```
-### Run:
-```sh
-./reverse_order_temp
-```
-
 ## Output:
 ```
 Celsius         Fahrenheit
